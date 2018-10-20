@@ -5,7 +5,7 @@ from django.contrib import admin
 from django.shortcuts import render
 from django.contrib.admin.options import csrf_protect_m
 from django.http import HttpResponseRedirect
-from django.core.urlresolvers import reverse
+from django.urls import reverse
 from django.conf.urls import url
 from django.utils.encoding import force_text
 from django.http import HttpResponseForbidden
