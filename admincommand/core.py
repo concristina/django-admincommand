@@ -8,10 +8,8 @@ from django.core.management import get_commands
 from django.core.management import load_command_class
 from django.core.management.base import BaseCommand
 from django.contrib.auth.models import User
-try:
-    from async import schedule
-except ImportError:
-    schedule = None
+
+schedule = None
 
 from admincommand.models import AdminCommand
 
